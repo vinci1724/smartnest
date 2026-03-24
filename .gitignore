@@ -1,0 +1,33 @@
+# node
+node_modules/
+.pnpm-store/
+
+# builds
+dist/
+build/
+.next/
+.expo/
+
+# env
+.env*
+!.env.example
+
+# logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ide
+.zed/
+
+# LLM
+.claude/
+CLAUDE.md
+.qwen/
+QWEN.md
+skills-lock.json
+
+# temp
+docs/
