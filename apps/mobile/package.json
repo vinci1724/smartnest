@@ -1,0 +1,14 @@
+{
+  "name": "@smartnest/mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"TODO: expo start\"",
+    "build": "echo \"TODO: expo build\"",
+    "lint": "echo \"TODO: eslint\"",
+    "test": "echo \"TODO: jest\""
+  },
+  "dependencies": {
+    "@smartnest/shared": "workspace:*"
+  }
+}

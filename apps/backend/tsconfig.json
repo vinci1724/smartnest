@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // NestJS требует CommonJS + Node resolution
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    // NestJS использует декораторы
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    // Сборка
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "removeComments": true
+  }
+}

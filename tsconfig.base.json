@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Компиляция
+    "target": "ES2022", // JS-версия на выходе (top-level await, Array.at и др.)
+    "module": "ESNext", // ESM-формат модулей (import/export)
+    "lib": ["ES2022"], // Типы стандартной библиотеки (без DOM — бэкенду не нужен)
+
+    // Строгость
+    "strict": true, // Все strict-проверки (strictNullChecks, noImplicitAny и др.)
+    "forceConsistentCasingInFileNames": true, // Запрет несовпадения регистра в импортах (защита от багов на Linux)
+    "isolatedModules": true, // Каждый файл — отдельный модуль (совместимость с esbuild/SWC)
+
+    // Резолвинг модулей
+    "moduleResolution": "Bundler", // Современный резолвинг: понимает exports в package.json
+    "esModuleInterop": true, // import x from 'cjs-pkg' вместо import * as x
+    "resolveJsonModule": true, // Разрешает import из .json файлов
+
+    // Генерация файлов
+    "declaration": true, // Генерация .d.ts (нужно для packages/shared)
+    "declarationMap": true, // Go to Definition ведёт к исходному .ts, а не к .d.ts
+    "sourceMap": true, // Маппинг JS → TS для отладки
+
+    // Производительность
+    "skipLibCheck": true // Не проверять типы в node_modules .d.ts — ускоряет сборку
+  }
+}
