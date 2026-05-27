@@ -1,0 +1,64 @@
+{
+  "formatter": {
+    "external": {
+      "command": "npx.cmd",
+      "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+    }
+  },
+  "format_on_save": "on",
+
+  "languages": {
+    "JavaScript": {
+      "language_servers": ["!typescript-language-server", "vtsls"],
+      "formatter": {
+        "external": {
+          "command": "npx.cmd",
+          "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "language_servers": ["!typescript-language-server", "vtsls"],
+      "formatter": {
+        "external": {
+          "command": "npx.cmd",
+          "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "language_servers": ["!typescript-language-server", "vtsls"],
+      "formatter": {
+        "external": {
+          "command": "npx.cmd",
+          "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "JSON": {
+      "formatter": {
+        "external": {
+          "command": "npx.cmd",
+          "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JSONC": {
+      "formatter": {
+        "external": {
+          "command": "npx.cmd",
+          "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  }
+}

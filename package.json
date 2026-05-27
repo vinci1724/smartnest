@@ -12,7 +12,7 @@
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.1.2",
   "devDependencies": {
     "@eslint/js": "^9.39.4",
     "eslint": "^9.39.4",
